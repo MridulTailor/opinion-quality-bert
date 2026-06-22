@@ -77,11 +77,7 @@ reaction
 - `reaction`: 0.59
 
 **Confusion Matrix:**
-| True \ Predicted | analysis | hot_take | reaction |
-|------------------|----------|----------|----------|
-| **analysis**     |   12     |    0     |    0     |
-| **hot_take**     |   10     |    2     |    0     |
-| **reaction**     |    5     |    2     |    5     |
+![Confusion Matrix](confusion_matrix.png)
 
 **Failure Analysis (3 wrong predictions):**
 1. *Post:* "If Knicks lost 2n, the hart layup and missed box out would be huge talking points."
