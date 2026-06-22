@@ -16,9 +16,17 @@
    - *Example 2:* "I am so sick of this team. Trade everyone."
 
 ## 3. Hard Edge Cases
-**The Ambiguous Case:** A post that makes a bold claim and includes one piece of statistical evidence, but the evidence is cherry-picked.
+**Case 1:** A post that makes a bold claim and includes one piece of statistical evidence, but the evidence is cherry-picked.
 *Example:* "LeBron is overrated — his playoff win rate against top-seeded opponents is below .500."
 **Decision Rule:** If the post provides verifiable evidence supporting the claim, label it `analysis`. If the evidence is cherry-picked, label it `hot_take`. The post above is labeled `hot_take`.
+
+**Case 2:** A post that contains emotion and a stat, but primarily functions as an emotional complaint.
+*Example:* "I can't believe Darvin Ham played Prince over Rui for 30 minutes. The stats literally show the Lakers are +8 with Rui on the floor. Terrible coaching."
+**Decision Rule:** If the primary function is emotional venting rather than a structured argument, label it `reaction`.
+
+**Case 3:** A bold opinion that relies on a widespread narrative rather than verifiable stats.
+*Example:* "Rudy Gobert is useless in the playoffs. Teams just go small and play him off the floor every year because he can't guard the perimeter."
+**Decision Rule:** Even if a narrative sounds analytical, if it lacks verifiable stats and asserts a bold claim, label it `hot_take`.
 
 ## 4. Data Collection Plan
 - **Where:** A Python script interacts with the reddit34 RapidAPI to pull comments from `r/nba` posts.
